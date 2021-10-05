@@ -13,28 +13,28 @@ const About = () => {
 
       <div className="container-fluid mt-5">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-lg-3 col-sm-6">
             <img src="./assets/images/face-1.png" alt="face-1" />
             <div className="person-info-text">
               <h5>Dario Ovejero</h5>
               <h5>Businessman, speaker and NFT artist</h5>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-lg-3 col-sm-6">
             <img src="./assets/images/face-2.png" alt="face-2" />
             <div className="person-info-text">
               <h5>Adrian Ovejero</h5>
               <h5>Lawyer specialized in cryptocurrencies</h5>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-lg-3 col-sm-6">
             <img src="./assets/images/face-3.png" alt="face-3" />
             <div className="person-info-text">
               <h5>Alejandro Ovejero</h5>
               <h5>Analyst and Programmer of the blockchain</h5>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-lg-3 col-sm-6">
             <img src="./assets/images/face-4.png" alt="face-4" />
             <div className="person-info-text">
               <h5>Marcos Ovejero</h5>
@@ -44,8 +44,8 @@ const About = () => {
         </div>
       </div>
 
-      <a className="btn" href="/">
-        Know Us
+      <a className="btn outlined" href="/">
+        Know us
       </a>
     </div>
   );

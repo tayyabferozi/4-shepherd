@@ -6,11 +6,17 @@ const Stats = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6">
-            <img src="assets/vectors/stats-top.svg" alt="earn" />
+            <img
+              src="assets/vectors/stats-top.svg"
+              className="earn"
+              alt="earn"
+            />
           </div>
           <div className="col-md-6">
             <div className="text">
-              <h3>We develop systems to manage investments in:</h3>
+              <h3>
+                We develop systems <br /> to manage investments in:
+              </h3>
               <ul className="list">
                 <li>Blockchain-based games (Play to earn)</li> <br />
                 <li>Cryptographic Art and Virtual Lands (NFT)</li> <br />
@@ -30,19 +36,21 @@ const Stats = () => {
         />
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-sm-3 col-6 py-2 py-sm-0">
               <h2>+1000</h2>
               <p>Active players</p>
             </div>
-            <div className="col-md-3">
+            <div className="col-sm-3 col-6 py-2 py-sm-0">
               <h2>+35000</h2>
               <p>NFT managed</p>
             </div>
-            <div className="col-md-3">
+            <div className="col-sm-3 col-6 py-2 py-sm-0">
               <h2>+10</h2>
-              <p>Invested NFT projects</p>
+              <p>
+                Invested NFT <br /> projects
+              </p>
             </div>
-            <div className="col-md-3">
+            <div className="col-sm-3 col-6 py-2 py-sm-0">
               <h2>+260</h2>
               <p>Ethereum invested</p>
             </div>
@@ -54,39 +62,19 @@ const Stats = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col">
-              <img
-                src="./assets/vectors/axie.svg"
-                className="w-50"
-                alt="axie"
-              />
+              <img src="./assets/vectors/axie.svg" alt="axie" />
             </div>
             <div className="col">
-              <img
-                src="./assets/vectors/sandbox.svg"
-                className="w-75"
-                alt="sandbox"
-              />
+              <img src="./assets/vectors/sandbox.svg" alt="sandbox" />
             </div>
             <div className="col">
-              <img
-                src="./assets/vectors/star-atlas.svg"
-                className="w-75"
-                alt="star-atlas"
-              />
+              <img src="./assets/vectors/star-atlas.svg" alt="star-atlas" />
             </div>
             <div className="col">
-              <img
-                src="./assets/vectors/derace.svg"
-                className="w-25"
-                alt="derace"
-              />
+              <img src="./assets/vectors/derace.svg" alt="derace" />
             </div>
             <div className="col">
-              <img
-                src="./assets/vectors/decentraland.svg"
-                className="w-100"
-                alt="decentraland"
-              />
+              <img src="./assets/vectors/decentraland.svg" alt="decentraland" />
             </div>
             <div className="col">
               <h5>and more...</h5>
@@ -96,15 +84,14 @@ const Stats = () => {
       </div>
 
       <div className="info mt-5">
-        <img className="left" src="./assets/vectors/info-left.svg" alt="" />
-        <img className="right" src="./assets/vectors/info-right.svg" alt="" />
-
         <div className="info-text mx-auto">
+          <img className="left" src="./assets/images/info-left.png" alt="" />
+          <img className="right" src="./assets/images/info-right.png" alt="" />
           <div>
             We have more than 1000 active players from around the world
-            generating tokens tradeables on large exchanges and sharing profits.
-            A constantly growing community that generates mutual benefits for
-            investors and players.
+            generating tokens tradeables on large exchanges and sharing profits.{" "}
+            <br />A constantly growing community that generates mutual benefits
+            for investors and players.
           </div>
           <div>
             We create administration, control and distribution tools to provide
