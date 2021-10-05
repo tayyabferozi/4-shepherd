@@ -75,10 +75,11 @@ code {
 #landing,
 #stats,
 #features,
+#play,
+#art,
 #about-us,
 #FAQ,
-#footer,
-#play {
+#footer {
   padding-left: 6rem;
   padding-right: 6rem;
 }
@@ -89,10 +90,11 @@ code {
   #landing,
   #stats,
   #features,
+  #play,
+  #art,
   #about-us,
   #FAQ,
-  #footer,
-  #play {
+  #footer {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -104,10 +106,11 @@ code {
   #landing,
   #stats,
   #features,
+  #play,
+  #art,
   #about-us,
   #FAQ,
-  #footer,
-  #play {
+  #footer {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -119,12 +122,29 @@ code {
   #landing,
   #stats,
   #features,
+  #play,
+  #art,
   #about-us,
   #FAQ,
-  #footer,
-  #play {
+  #footer {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #navbar,
+  #navbar-sm,
+  #landing,
+  #stats,
+  #features,
+  #play,
+  #art,
+  #about-us,
+  #FAQ,
+  #footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -229,6 +249,37 @@ code {
   }
 }
 
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  padding-top: 3rem;
+  clip-path: circle(0px at 100% 0);
+  -webkit-clip-path: circle(0px at 100% 0);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  pointer-events: none;
+}
+
+.sidenav * {
+  font-family: "Helvetica Rounded Bold";
+}
+
+.sidenav a {
+  display: block;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidenav.active {
+  pointer-events: all;
+  clip-path: circle(700px at 50%);
+  -webkit-clip-path: circle(700px at 50%);
+}
+
 #landing {
   position: relative;
   padding-top: 255px;
@@ -240,7 +291,7 @@ code {
 
 #landing .bg {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   z-index: -1;
 }
@@ -1509,9 +1560,10 @@ code {
   position: relative;
   padding-left: 9rem;
   padding-right: 9rem;
-  padding-bottom: 2rem;
-  border-bottom: 3px solid #39a1ff;
+  padding-bottom: 3rem;
   overflow: hidden;
+  background: #39a1ff;
+  z-index: -1;
 }
 
 #play img.bg {
@@ -1523,7 +1575,6 @@ code {
 #play .main {
   position: relative;
   padding-top: 14rem;
-  padding-bottom: 6rem;
   z-index: 1;
 }
 
@@ -1542,13 +1593,27 @@ code {
 #play .main h4 img.right {
   width: 5rem;
   right: -8rem;
-  bottom: 0.75rem;
+  bottom: -1.25rem;
+}
+
+@media screen and (max-width: 991px) {
+  #play .main h4 img.right {
+    right: -1rem;
+    opacity: 0.1;
+  }
 }
 
 #play .main h4 img.left {
-  width: 5rem;
-  left: -8rem;
-  bottom: 0.75rem;
+  width: 3rem;
+  left: -5rem;
+  bottom: 5rem;
+}
+
+@media screen and (max-width: 991px) {
+  #play .main h4 img.left {
+    left: -1rem;
+    opacity: 0.1;
+  }
 }
 
 #play .main * {
@@ -1556,24 +1621,51 @@ code {
 }
 
 #play .main .stats {
-  max-width: 330px;
+  max-width: 400px;
   text-align: left;
   margin-left: auto;
+  padding-right: 4rem;
+  margin-top: -3rem;
 }
 
 #play .main .stats .stats-heading {
   position: relative;
-  max-width: 190px;
   margin-left: auto;
   color: #150035;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 1;
 }
 
-#play .main .stats .stats-heading img.graph {
-  position: absolute;
-  max-width: 135px;
-  left: -85%;
-  top: -2rem;
-  z-index: 1;
+#play .main .stats .stats-heading .title {
+  color: #150035;
+  font-family: "Helvetica Rounded Bold";
+  width: 217px;
+  font-size: 20px;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 735px) {
+  #play .main .stats .stats-heading .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #play .main .stats .stats-heading .title {
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #play .main .stats .stats-heading .title {
+    width: 60%;
+  }
 }
 
 #play .main .stats table {
@@ -1622,30 +1714,96 @@ code {
   font-family: "Helvetica Rounded Bold";
 }
 
+#play .main .stats table.investor-table {
+  position: relative;
+}
+
+#play .main .stats table.investor-table img {
+  position: absolute;
+  width: 8rem;
+  top: -8rem;
+  left: -2rem;
+}
+
+@media screen and (max-width: 735px) {
+  #play .main .stats table.investor-table img {
+    width: 7rem;
+    position: absolute;
+    top: -6rem;
+    left: -2rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #play .main .stats {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  #play .main .stats {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #play .main .stats {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+}
+
 #play .main .companies {
   text-align: center;
-  width: 70%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
 }
 
-#play .nft-art {
+#play .main .companies h3 {
+  font-size: 1rem;
+}
+
+#play .main .companies > * {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1120px) {
+  #play {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #play {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+#art {
   margin-top: 3rem;
+  border-bottom: 3px solid #39a1ff;
+  padding-bottom: 2rem;
 }
 
-#play .nft-art .desc {
+#art .desc {
   font-family: "Helvetica Light";
   font-size: 1.25rem;
   text-align: justify;
 }
 
 @media screen and (max-width: 577px) {
-  #play .nft-art .desc {
+  #art .desc {
     font-size: 1rem;
   }
 }
 
-#play .nft-art .cards-container {
+#art .cards-container {
   margin-top: -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1661,7 +1819,7 @@ code {
   text-align: right;
 }
 
-#play .nft-art .cards-container .card {
+#art .cards-container .card {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1675,11 +1833,11 @@ code {
   margin-right: 0;
 }
 
-#play .nft-art .cards-container .card img {
+#art .cards-container .card img {
   margin-right: 0.5rem;
 }
 
-#play .nft-art .cards-container .card h4 {
+#art .cards-container .card h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1693,45 +1851,45 @@ code {
 }
 
 @media screen and (max-width: 1230px) {
-  #play .nft-art .cards-container .card h4 {
+  #art .cards-container .card h4 {
     font-size: 0.75rem;
   }
 }
 
-#play .nft-art .cards-container .card:nth-child(1) img {
+#art .cards-container .card:nth-child(1) img {
   width: 9rem;
 }
 
 @media screen and (max-width: 1350px) {
-  #play .nft-art .cards-container .card:nth-child(1) img {
+  #art .cards-container .card:nth-child(1) img {
     width: 7.5rem;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  #play .nft-art .cards-container .card:nth-child(1) img {
+  #art .cards-container .card:nth-child(1) img {
     width: 5.5rem;
   }
 }
 
-#play .nft-art .cards-container .card:nth-child(2) img {
+#art .cards-container .card:nth-child(2) img {
   width: 5rem;
 }
 
 @media screen and (max-width: 1350px) {
-  #play .nft-art .cards-container .card:nth-child(2) img {
+  #art .cards-container .card:nth-child(2) img {
     width: 3.5rem;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  #play .nft-art .cards-container .card:nth-child(2) img {
+  #art .cards-container .card:nth-child(2) img {
     width: 2.75rem;
   }
 }
 
 @media screen and (max-width: 577px) {
-  #play .nft-art .cards-container .card {
+  #art .cards-container .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1747,41 +1905,27 @@ code {
 }
 
 @media screen and (max-width: 1350px) {
-  #play .nft-art .cards-container {
+  #art .cards-container {
     max-width: 610px;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  #play .nft-art .cards-container {
+  #art .cards-container {
     max-width: 550px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  #play .nft-art .cards-container {
+  #art .cards-container {
     max-width: 470px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  #play .nft-art .cards-container {
+  #art .cards-container {
     margin-top: 2rem;
     margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 1120px) {
-  #play {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  #play {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }
 
@@ -1895,6 +2039,7 @@ code {
 
 #footer .address h4 {
   font-weight: 500;
+  font-family: "Helvetica";
 }
 
 @media screen and (max-width: 960px) {

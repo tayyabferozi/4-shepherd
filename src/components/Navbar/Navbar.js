@@ -1,21 +1,33 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Navbar = () => {
   const navRef = useRef(null);
+  const [navActive, setNavActive] = useState(false);
 
   useEffect(() => {
     const menuBtn = navRef.current;
     let menuOpen = false;
     menuBtn.addEventListener("click", () => {
-      if (!menuOpen) {
-        menuBtn.classList.add("open");
-        menuOpen = true;
-      } else {
-        menuBtn.classList.remove("open");
-        menuOpen = false;
-      }
+      setNavActive((prevState) => !prevState);
+      // if (!menuOpen) {
+      // menuBtn.classList.add("open");
+      // menuOpen = true;
+
+      // } else {
+      // menuBtn.classList
+      // .remove("open");
+      // menuOpen = false;
+      // }
     });
   }, [navRef]);
+
+  useEffect(() => {
+    document.querySelectorAll("#navbar-sm a").forEach((el) => {
+      el.addEventListener("click", function () {
+        setNavActive(false);
+      });
+    }, []);
+  });
 
   return (
     <>
@@ -42,13 +54,18 @@ const Navbar = () => {
 
       <div id="navbar-sm" className="d-md-none">
         <img src="./assets/vectors/logo.svg" className="logo" alt="Logo" />
-        {/* <img
-          src="./assets/images/hamburger.png"
-          className="hamburger"
-          alt="hamburger"
-        /> */}
-        <div class="menu-btn" ref={navRef}>
-          <div class="menu-btn__burger"></div>
+        <div className={`menu-btn${navActive ? " open" : " "}`} ref={navRef}>
+          <div
+            className={`menu-btn__burger${navActive ? " active" : " "}`}
+          ></div>
+        </div>
+
+        <div className={`sidenav${navActive ? " active" : " "}`}>
+          <a href="#landing">HOME</a>
+          <a href="#about-us">ABOUT US</a>
+          <a href="#FAQ">FAQ</a>
+          <a href="#footer">CONTACT</a>
+          <a href="#">ESPANOL</a>
         </div>
       </div>
     </>

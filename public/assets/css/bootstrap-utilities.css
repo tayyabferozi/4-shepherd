@@ -26,6 +26,14 @@
   }
 }
 
+.text-blue {
+  color: #39a1ff !important;
+}
+
+.text-dark {
+  color: #150035 !important;
+}
+
 .btn.outlined {
   position: relative;
   background-color: #150035;
@@ -63,6 +71,9 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   /* border: 3px solid #fff; */
+  position: fixed;
+  right: 2rem;
+  z-index: 5;
 }
 .menu-btn__burger {
   width: 40px;
@@ -82,6 +93,10 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger.active::before,
+.menu-btn__burger.active::after {
+  background: #000 !important;
 }
 .menu-btn__burger::before {
   transform: translateY(-12px);

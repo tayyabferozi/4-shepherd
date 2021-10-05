@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="purple-line"></div>
+      <div className="purple-line"></div>
     </>
   );
 };
