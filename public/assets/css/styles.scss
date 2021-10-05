@@ -556,6 +556,16 @@ code {
           }
         }
 
+        &::after {
+          content: "";
+          position: absolute;
+          left: -40px;
+          right: 0;
+          bottom: -10px;
+          height: 1px;
+          background: $primary-blue;
+        }
+
         @media screen and (max-width: 1335px) {
           font-size: 1.7rem;
         }
@@ -979,6 +989,8 @@ code {
       & > div {
         margin-bottom: 2rem;
         font-size: 20px;
+        font-family: "Helvetica";
+        font-weight: 500;
 
         @media screen and (max-width: 817px) {
           font-size: 16px;

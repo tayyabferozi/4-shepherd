@@ -751,6 +751,16 @@ code {
   }
 }
 
+#stats .text .list li::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  right: 0;
+  bottom: -10px;
+  height: 1px;
+  background: #39a1ff;
+}
+
 @media screen and (max-width: 1335px) {
   #stats .text .list li {
     font-size: 1.7rem;
@@ -1320,6 +1330,8 @@ code {
 #stats .info .info-text > div {
   margin-bottom: 2rem;
   font-size: 20px;
+  font-family: "Helvetica";
+  font-weight: 500;
 }
 
 @media screen and (max-width: 817px) {
