@@ -7,10 +7,11 @@ import Art from "./components/Art/Art";
 import About from "./components/About/About";
 import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
+import { LanguageContextProvider } from "./context/LanguageContext";
 
 function App() {
   return (
-    <>
+    <LanguageContextProvider>
       <Navbar />
       <Landing />
       <Stats />
@@ -20,7 +21,7 @@ function App() {
       <About />
       <FAQ />
       <Footer />
-    </>
+    </LanguageContextProvider>
   );
 }
 
