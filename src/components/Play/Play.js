@@ -3,29 +3,6 @@ import React, { useState, useEffect, useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
 
 const spanishText = {
-  mainHeading: "What is Play to Earn?",
-  para1:
-    "The gaming industry is going through a massive growth phase, and the 'play to win' model opens up new opportunities for blockchain gaming.",
-  para2:
-    '"Play to earn" is simply to give players and gaming enthusiasts control and ownership of game assets, further allowing these players to increase the value of these assets by actively playing the game. Players of this business model create value for game developers and other players by participating in the game economy. As a reward for their participation, they receive game assets. These assets range from game resources like game tools, weapons, or cryptocurrencies, to other game assets that can be tokenized on the blockchain and even sold as NFTs. This is why the "play-to-earn" business model has been successful when used with blockchain games.',
-  tablesHead_1: "Incomes from",
-  tablesHead_2: "the season",
-  tablesHead_3: "(Play to earn)",
-  table1Head: "Investor returns",
-  table1Col1_1: "40%",
-  table1Col1_2: "of what is generated",
-  table1Col2_1: "+5% monthly",
-  table1Col2_2: "rent",
-  table1Col2_3: "estimated",
-  table2Head: "Player returns",
-  table2Col1_1: "50%",
-  table2Col1_2: "of what is generated",
-  table2Col2_1: "usd 240.000",
-  table2Col2_2: "monthly distributed",
-  company1: "See more:",
-};
-
-const engText = {
   mainHeading: "Que es Play to Earn?",
   para1:
     'La industria del juego está pasando por una fase de crecimiento masivo, y el modelo de "jugar para ganar" abre nuevas oportunidades para el juego con blockchain.',
@@ -46,6 +23,29 @@ const engText = {
   table2Col2_1: "usd 240.000",
   table2Col2_2: "mensuales distribuidos",
   company1: "Leer más en:",
+};
+
+const engText = {
+  mainHeading: "What is Play to Earn?",
+  para1:
+    "The gaming industry is going through a massive growth phase, and the 'play to win' model opens up new opportunities for blockchain gaming.",
+  para2:
+    '"Play to earn" is simply to give players and gaming enthusiasts control and ownership of game assets, further allowing these players to increase the value of these assets by actively playing the game. Players of this business model create value for game developers and other players by participating in the game economy. As a reward for their participation, they receive game assets. These assets range from game resources like game tools, weapons, or cryptocurrencies, to other game assets that can be tokenized on the blockchain and even sold as NFTs. This is why the "play-to-earn" business model has been successful when used with blockchain games.',
+  tablesHead_1: "Incomes from",
+  tablesHead_2: "the season",
+  tablesHead_3: "(Play to earn)",
+  table1Head: "Investor returns",
+  table1Col1_1: "40%",
+  table1Col1_2: "of what is generated",
+  table1Col2_1: "+5% monthly",
+  table1Col2_2: "rent",
+  table1Col2_3: "estimated",
+  table2Head: "Player returns",
+  table2Col1_1: "50%",
+  table2Col1_2: "of what is generated",
+  table2Col2_1: "usd 240.000",
+  table2Col2_2: "monthly distributed",
+  company1: "See more:",
 };
 
 const Play = () => {

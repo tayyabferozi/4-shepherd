@@ -164,6 +164,13 @@ code {
   width: 100%;
   background-color: #39a1ff;
   z-index: 5;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#navbar.scrolled {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 #navbar img.logo {
@@ -345,6 +352,12 @@ code {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  #landing .landing-right {
+    width: 40vw;
+  }
+}
+
 #landing * {
   color: #fff;
 }
@@ -381,7 +394,7 @@ code {
 @media screen and (max-width: 767px) {
   #landing h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -391,20 +404,20 @@ code {
   }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 662px) {
   #landing h1 {
     margin-bottom: 0.5rem !important;
     font-size: 47px;
   }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 570px) {
   #landing h1 {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 480px) {
   #landing h1 {
     font-size: 25px;
   }
@@ -412,13 +425,19 @@ code {
 
 @media screen and (max-width: 435px) {
   #landing h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 350px) {
   #landing h1 {
-    font-size: 22px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #landing h1 {
+    font-size: 4vw;
   }
 }
 
@@ -459,7 +478,7 @@ code {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -469,27 +488,34 @@ code {
   }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 662px) {
   #landing h3 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 570px) {
   #landing h3 {
     font-size: 0.875rem;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
   #landing h3 {
     font-size: 0.75rem;
   }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 350px) {
   #landing h3 {
     font-size: 0.675rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #landing h3 {
+    max-width: unset;
+    font-size: 2vw;
   }
 }
 
@@ -511,25 +537,25 @@ code {
 
 @media screen and (max-width: 690px) {
   #landing {
-    padding-top: 115px;
+    padding-top: 95px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #landing {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
 @media screen and (max-width: 440px) {
   #landing {
-    padding-top: 115px;
+    padding-top: 75px;
   }
 }
 
 @media screen and (max-width: 435px) {
   #landing {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 }
 
@@ -542,6 +568,18 @@ code {
 @media screen and (max-width: 360px) {
   #landing {
     padding-top: 67px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #landing {
+    padding-bottom: 50vw;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #landing {
+    padding-bottom: 60vw;
   }
 }
 
@@ -1572,10 +1610,17 @@ code {
   left: 0;
 }
 
+@media screen and (min-width: 1400px) {
+  #play img.bg {
+    width: 120%;
+  }
+}
+
 #play .main {
   position: relative;
   padding-top: 14rem;
   z-index: 1;
+  max-width: 1135px;
 }
 
 #play .main h4 {
@@ -1769,6 +1814,12 @@ code {
 
 #play .main .companies > * {
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1570px) {
+  #play .main {
+    padding-top: 18rem;
+  }
 }
 
 @media screen and (max-width: 1120px) {

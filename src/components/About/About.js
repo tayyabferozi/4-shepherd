@@ -3,21 +3,6 @@ import React, { useState, useEffect, useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
 
 const spanishText = {
-  heading: "About Us",
-  paragraph:
-    "We are four brothers who complement our individual and technological skills to develop management systems related to cryptocurrencies. Today we generate a team that manages more than 1000 people and contributes to a cause that is changing the way of seeing the social economic world.",
-  name1: "Dario Ovejero",
-  designation1: "Businessman, speaker and NFT artist",
-  name2: "Adrian Ovejero",
-  designation2: "Lawyer specialized in cryptocurrencies",
-  name3: "Alejandro Ovejero",
-  designation3: "Analyst and Programmer of the blockchain",
-  name4: "Marcos Ovejero",
-  designation4: "Audiovisual producer and crypto specialist",
-  btn: "Know us",
-};
-
-const engText = {
   heading: "Quienes somos?",
   paragraph:
     "Somos cuatro hermanos que complementamos nuestras habilidades individuales y tecnológicas para desarrollar sistemas de gestión relacionados a las criptomonedas. Hoy generamos un equipo que administra a mas de 1000 personas y contribuye a una causa que esta cambiando la manera de ver el mundo socio-económico.",
@@ -30,6 +15,21 @@ const engText = {
   name4: "Marcos Ovejero",
   designation4: "Productor Audiovisual y especialista en criptos",
   btn: "Conocenos",
+};
+
+const engText = {
+  heading: "About Us",
+  paragraph:
+    "We are four brothers who complement our individual and technological skills to develop management systems related to cryptocurrencies. Today we generate a team that manages more than 1000 people and contributes to a cause that is changing the way of seeing the social economic world.",
+  name1: "Dario Ovejero",
+  designation1: "Businessman, speaker and NFT artist",
+  name2: "Adrian Ovejero",
+  designation2: "Lawyer specialized in cryptocurrencies",
+  name3: "Alejandro Ovejero",
+  designation3: "Analyst and Programmer of the blockchain",
+  name4: "Marcos Ovejero",
+  designation4: "Audiovisual producer and crypto specialist",
+  btn: "Know us",
 };
 
 const About = () => {
