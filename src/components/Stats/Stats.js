@@ -10,7 +10,7 @@ const spanishText = {
   li3: "Finanzas descentralizadas (DeFi)",
   li4: "Tokens de nuevos proyectos del Metaverse.",
   stat1: "ugadores activos",
-  stat2: "",
+  stat2: "NFT administrados",
   stat3_1: "Proyectos NFT",
   stat3_2: "invertidos",
   stat4: "Ethereum invertidos",

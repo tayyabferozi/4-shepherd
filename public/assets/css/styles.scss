@@ -270,7 +270,7 @@ code {
     }
 
     @media screen and (min-width: 1400px) {
-      width: 40vw;
+      width: 50vw;
     }
   }
 
@@ -427,10 +427,6 @@ code {
 
   @media screen and (min-width: 1400px) {
     padding-bottom: 50vw;
-  }
-
-  @media screen and (min-width: 1800px) {
-    padding-bottom: 60vw;
   }
 }
 
@@ -1045,6 +1041,10 @@ code {
   @media screen and (max-width: 930px) {
     margin-top: -590px;
   }
+
+  @media screen and (min-width: 1800px) {
+    margin-top: -600px;
+  }
 }
 
 #features {
@@ -1068,6 +1068,9 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 
     img {
       width: 5rem;
@@ -1409,6 +1412,9 @@ code {
   margin-top: 3rem;
   border-bottom: 3px solid $primary-blue;
   padding-bottom: 2rem;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 
   .desc {
     font-family: "Helvetica Light";
@@ -1510,6 +1516,9 @@ code {
 #about-us {
   padding-top: 3rem;
   border-top: 4px dotted black;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 
   .about-text {
     max-width: 700px;
@@ -1549,6 +1558,9 @@ code {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
 
     .question-mark {
       width: 25%;
@@ -1556,6 +1568,10 @@ code {
       @media screen and (max-width: 767px) {
         display: none;
       }
+
+      // @media screen and (min-width: 1440px) {
+      //   width: 28vw;
+      // }
     }
 
     .faqs {
@@ -1563,6 +1579,7 @@ code {
       width: 75%;
       padding-right: 1.5rem;
       z-index: 0;
+      max-width: 1010px;
 
       .question {
         margin-bottom: 1rem;
