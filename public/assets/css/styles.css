@@ -1321,7 +1321,7 @@ code {
   font-family: "Helvetica Light";
 }
 
-#stats .info .info-text > div {
+#stats .info .info-text div {
   margin-bottom: 2rem;
   font-size: 20px;
   font-family: "Helvetica";
@@ -1329,7 +1329,7 @@ code {
 }
 
 @media screen and (max-width: 817px) {
-  #stats .info .info-text > div {
+  #stats .info .info-text div {
     font-size: 16px;
   }
 }

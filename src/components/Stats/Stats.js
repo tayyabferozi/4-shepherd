@@ -1,4 +1,8 @@
 import { useContext, useState, useEffect } from "react";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Bounce from "react-reveal/Bounce";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -59,79 +63,111 @@ const Stats = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6">
-            <img
-              src="assets/vectors/stats-top.svg"
-              className="earn"
-              alt="earn"
-            />
+            <div>
+              <Fade bottom>
+                <img
+                  src="assets/vectors/stats-top.svg"
+                  className="earn"
+                  alt="earn"
+                />
+              </Fade>
+            </div>
           </div>
           <div className="col-md-6">
             <div className="text">
               <h3>
-                {textState.top1} <br /> {textState.top2}
+                <div>
+                  <Fade bottom>
+                    <div>
+                      {textState.top1} <br /> {textState.top2}
+                    </div>
+                  </Fade>
+                </div>
               </h3>
               <ul className="list">
-                <li> {textState.li1}</li> <br />
-                <li> {textState.li2}</li> <br />
-                <li> {textState.li3}</li> <br />
-                <li>{textState.li4}</li>
+                <div>
+                  <Flip right cascade>
+                    <div>
+                      <li> {textState.li1}</li> <br />
+                      <li> {textState.li2}</li> <br />
+                      <li> {textState.li3}</li> <br />
+                      <li>{textState.li4}</li>
+                    </div>
+                  </Flip>
+                </div>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="stats mx-auto mt-5">
-        <img
-          className="outline"
-          src="./assets/images/box-outline.png"
-          alt="outline"
-        />
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-3 col-6 py-2 py-sm-0">
-              <h2>+1000</h2>
-              <p>{textState.stat1}</p>
-            </div>
-            <div className="col-sm-3 col-6 py-2 py-sm-0">
-              <h2>+35000</h2>
-              <p>{textState.stat2}</p>
-            </div>
-            <div className="col-sm-3 col-6 py-2 py-sm-0">
-              <h2>+10</h2>
-              <p>
-                {textState.stat3_1} <br /> {textState.stat3_2}
-              </p>
-            </div>
-            <div className="col-sm-3 col-6 py-2 py-sm-0">
-              <h2>+260</h2>
-              <p>{textState.stat4}</p>
+      <div>
+        <Zoom>
+          <div className="stats mx-auto mt-5">
+            <img
+              className="outline"
+              src="./assets/images/box-outline.png"
+              alt="outline"
+            />
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-sm-3 col-6 py-2 py-sm-0">
+                  <h2>+1000</h2>
+                  <p>{textState.stat1}</p>
+                </div>
+                <div className="col-sm-3 col-6 py-2 py-sm-0">
+                  <h2>+35000</h2>
+                  <p>{textState.stat2}</p>
+                </div>
+                <div className="col-sm-3 col-6 py-2 py-sm-0">
+                  <h2>+10</h2>
+                  <p>
+                    {textState.stat3_1} <br /> {textState.stat3_2}
+                  </p>
+                </div>
+                <div className="col-sm-3 col-6 py-2 py-sm-0">
+                  <h2>+260</h2>
+                  <p>{textState.stat4}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </Zoom>
       </div>
 
       <div className="companies mx-auto mt-5">
         <div className="container-fluid">
-          <div className="row">
-            <div className="col">
-              <img src="./assets/vectors/axie.svg" alt="axie" />
-            </div>
-            <div className="col">
-              <img src="./assets/vectors/sandbox.svg" alt="sandbox" />
-            </div>
-            <div className="col">
-              <img src="./assets/vectors/star-atlas.svg" alt="star-atlas" />
-            </div>
-            <div className="col">
-              <img src="./assets/vectors/derace.svg" alt="derace" />
-            </div>
-            <div className="col">
-              <img src="./assets/vectors/decentraland.svg" alt="decentraland" />
-            </div>
-            <div className="col">
-              <h5>and more...</h5>
-            </div>
+          <div>
+            <Bounce cascade>
+              <div>
+                <div className="row">
+                  <div className="col">
+                    <img src="./assets/vectors/axie.svg" alt="axie" />
+                  </div>
+                  <div className="col">
+                    <img src="./assets/vectors/sandbox.svg" alt="sandbox" />
+                  </div>
+                  <div className="col">
+                    <img
+                      src="./assets/vectors/star-atlas.svg"
+                      alt="star-atlas"
+                    />
+                  </div>
+                  <div className="col">
+                    <img src="./assets/vectors/derace.svg" alt="derace" />
+                  </div>
+                  <div className="col">
+                    <img
+                      src="./assets/vectors/decentraland.svg"
+                      alt="decentraland"
+                    />
+                  </div>
+                  <div className="col">
+                    <h5>and more...</h5>
+                  </div>
+                </div>
+              </div>
+            </Bounce>
           </div>
         </div>
       </div>
@@ -141,12 +177,18 @@ const Stats = () => {
           <img className="left" src="./assets/images/info-left.png" alt="" />
           <img className="right" src="./assets/images/info-right.png" alt="" />
           <div>
-            {textState.info1_1}
-            <br />
-            {textState.info1_2}
+            <Fade>
+              <div>
+                <div>
+                  {textState.info1_1}
+                  <br />
+                  {textState.info1_2}
+                </div>
+                <div>{textState.info2}</div>
+                <div>{textState.info3}</div>
+              </div>
+            </Fade>
           </div>
-          <div>{textState.info2}</div>
-          <div>{textState.info3}</div>
         </div>
       </div>
     </div>

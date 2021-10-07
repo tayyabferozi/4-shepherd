@@ -1,4 +1,6 @@
 import { useContext, useState, useEffect } from "react";
+import Fade from "react-reveal/Fade";
+import LightSpeed from "react-reveal/LightSpeed";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -30,17 +32,25 @@ const Landing = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-5">
-            <h1 className=" mb-4 lh-1">
-              {textState.mainHeading1} <br /> {textState.mainHeading2}
-            </h1>
-            <h3>{textState.subHeading}</h3>
+            <div>
+              <LightSpeed left cascade>
+                <div>
+                  <h1 className=" mb-4 lh-1">
+                    {textState.mainHeading1} <br /> {textState.mainHeading2}
+                  </h1>
+                  <h3>{textState.subHeading}</h3>
+                </div>
+              </LightSpeed>
+            </div>
           </div>
           <div className="col-md-7">
-            <img
-              className="landing-right"
-              src="./assets/vectors/landing-right.svg"
-              alt="landing-right"
-            />
+            <Fade right>
+              <img
+                className="landing-right"
+                src="./assets/vectors/landing-right.svg"
+                alt="landing-right"
+              />
+            </Fade>
           </div>
         </div>
       </div>

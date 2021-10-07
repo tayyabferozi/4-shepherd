@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import Zoom from "react-reveal/Zoom";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -37,29 +38,35 @@ const FAQ = () => {
       <h1 className="text-center text-white mb-5">FAQ</h1>
 
       <div className="faqs-container">
-        <div className="faqs">
-          <div className="question">
-            <h2>{textState.q1}</h2>
-            <p>{textState.a1}</p>
-          </div>
-          <div className="question">
-            <h2>{textState.q2}</h2>
-            <p>{textState.a2}</p>
-          </div>
-          <div className="question">
-            <h2>{textState.q3}</h2>
-            <p>{textState.a3}</p>
-          </div>
-          <div className="question">
-            <h2>{textState.q4}</h2>
-            <p>{textState.a4}</p>
-          </div>
+        <div>
+          <Zoom right cascade>
+            <div className="faqs">
+              <div className="question">
+                <h2>{textState.q1}</h2>
+                <p>{textState.a1}</p>
+              </div>
+              <div className="question">
+                <h2>{textState.q2}</h2>
+                <p>{textState.a2}</p>
+              </div>
+              <div className="question">
+                <h2>{textState.q3}</h2>
+                <p>{textState.a3}</p>
+              </div>
+              <div className="question">
+                <h2>{textState.q4}</h2>
+                <p>{textState.a4}</p>
+              </div>
+            </div>
+          </Zoom>
         </div>
-        <img
-          className="question-mark"
-          alt="question-mark"
-          src="./assets/vectors/question-mark.svg"
-        />
+        <Zoom>
+          <img
+            className="question-mark"
+            alt="question-mark"
+            src="./assets/vectors/question-mark.svg"
+          />
+        </Zoom>
       </div>
     </div>
   );

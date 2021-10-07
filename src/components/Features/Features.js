@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from "react";
+import Bounce from "react-reveal/Bounce";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -30,26 +31,32 @@ const Features = () => {
 
   return (
     <div id="features">
-      <h2 className="mb-3 text-center">Nuestras herramientas incluyen</h2>
-      <div className="d-flex justify-content-center align-items-center features-main">
-        <div className="feauture-img-container">
-          <img src="./assets/vectors/features-1.svg" alt="" />
-          <h3 className="feature-text">
-            {textState.feature1_1} <br /> {textState.feature1_2}
-          </h3>
-        </div>
-        <div className="feauture-img-container">
-          <img src="./assets/images/features-2.png" alt="" />
-          <h3 className="feature-text">
-            {textState.feature2_1} <br /> {textState.feature2_2}
-          </h3>
-        </div>
-        <div className="feauture-img-container">
-          <img src="./assets/vectors/features-3.svg" alt="" />
-          <h3 className="feature-text">
-            {textState.feature3_1} <br /> {textState.feature3_2}
-          </h3>
-        </div>
+      <h2 className="mb-3 text-center">
+        <Bounce cascade>Nuestras herramientas incluyen</Bounce>
+      </h2>
+      <div>
+        <Bounce cascade>
+          <div className="d-flex justify-content-center align-items-center features-main">
+            <div className="feauture-img-container">
+              <img src="./assets/vectors/features-1.svg" alt="" />
+              <h3 className="feature-text">
+                {textState.feature1_1} <br /> {textState.feature1_2}
+              </h3>
+            </div>
+            <div className="feauture-img-container">
+              <img src="./assets/images/features-2.png" alt="" />
+              <h3 className="feature-text">
+                {textState.feature2_1} <br /> {textState.feature2_2}
+              </h3>
+            </div>
+            <div className="feauture-img-container">
+              <img src="./assets/vectors/features-3.svg" alt="" />
+              <h3 className="feature-text">
+                {textState.feature3_1} <br /> {textState.feature3_2}
+              </h3>
+            </div>
+          </div>
+        </Bounce>
       </div>
       <img className="coins" src="./assets/vectors/coins-.svg" alt="coints" />
     </div>

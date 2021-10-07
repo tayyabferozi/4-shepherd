@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import Fade from "react-reveal/Fade";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -45,37 +46,49 @@ const Art = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-2 pe-4 d-none d-sm-block">
-            <img className="art" src="./assets/vectors/art.svg" alt="art" />
+            <div>
+              <Fade left>
+                <img className="art" src="./assets/vectors/art.svg" alt="art" />
+              </Fade>
+            </div>
           </div>
           <div className="col-sm-10 ps-0 ps-sm-5">
-            <h2 className="mb-4">{textState.mainHeading}</h2>
+            <div>
+              <Fade left>
+                <h2 className="mb-4">{textState.mainHeading}</h2>
 
-            <h4 className="desc">
-              {textState.para1} <br />
-              {textState.para2}
-            </h4>
+                <h4 className="desc">
+                  {textState.para1} <br />
+                  {textState.para2}
+                </h4>
+              </Fade>
+            </div>
             <a href="tel:" className="btn outlined ms-sm-2 mx-auto mx-sm-0">
               {textState.btn}
             </a>
 
-            <div className="cards-container">
-              <div className="card">
-                <img src="./assets/vectors/art-1.svg" alt="art-1" />
-                <h4>
-                  {textState.card1_1}
-                  <br />
-                  {textState.card1_2}
-                  <br />
-                  {textState.card1_3}
-                </h4>
-              </div>
-              <div className="card">
-                <img src="./assets/vectors/art-2.svg" alt="art-2" />
-                <h4>
-                  {textState.card2_1} <br /> {textState.card2_2} <br />
-                  {textState.card2_3}
-                </h4>
-              </div>
+            <div>
+              <Fade left>
+                <div className="cards-container">
+                  <div className="card">
+                    <img src="./assets/vectors/art-1.svg" alt="art-1" />
+                    <h4>
+                      {textState.card1_1}
+                      <br />
+                      {textState.card1_2}
+                      <br />
+                      {textState.card1_3}
+                    </h4>
+                  </div>
+                  <div className="card">
+                    <img src="./assets/vectors/art-2.svg" alt="art-2" />
+                    <h4>
+                      {textState.card2_1} <br /> {textState.card2_2} <br />
+                      {textState.card2_3}
+                    </h4>
+                  </div>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
