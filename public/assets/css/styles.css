@@ -1633,7 +1633,7 @@ code {
 
 #play .main {
   position: relative;
-  padding-top: 14rem;
+  padding-top: 18rem;
   z-index: 1;
   max-width: 1135px;
 }
@@ -1642,7 +1642,7 @@ code {
   position: relative;
   font-size: 1.25rem;
   text-align: justify;
-  font-family: "Helvetica Light";
+  font-family: "Helvetica";
   font-weight: 500;
 }
 
@@ -1685,7 +1685,7 @@ code {
   text-align: left;
   margin-left: auto;
   padding-right: 4rem;
-  margin-top: -3rem;
+  margin-top: -5rem;
 }
 
 #play .main .stats .stats-heading {
