@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import Bounce from "react-reveal/Bounce";
+import Fade from "react-reveal/Fade";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -32,10 +32,10 @@ const Features = () => {
   return (
     <div id="features">
       <h2 className="mb-3 text-center">
-        <Bounce cascade>Nuestras herramientas incluyen</Bounce>
+        <Fade cascade>Nuestras herramientas incluyen</Fade>
       </h2>
       <div>
-        <Bounce cascade>
+        <Fade bottom cascade>
           <div className="d-flex justify-content-center align-items-center features-main">
             <div className="feauture-img-container">
               <img src="./assets/vectors/features-1.svg" alt="" />
@@ -56,7 +56,7 @@ const Features = () => {
               </h3>
             </div>
           </div>
-        </Bounce>
+        </Fade>
       </div>
       <img className="coins" src="./assets/vectors/coins-.svg" alt="coints" />
     </div>

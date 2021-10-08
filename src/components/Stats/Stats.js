@@ -1,8 +1,8 @@
 import { useContext, useState, useEffect } from "react";
-import Flip from "react-reveal/Flip";
+// import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
-import Bounce from "react-reveal/Bounce";
+// import Zoom from "react-reveal/Zoom";
+// import Bounce from "react-reveal/Bounce";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -64,13 +64,13 @@ const Stats = () => {
         <div className="row">
           <div className="col-md-6">
             <div>
-              <Fade bottom>
-                <img
-                  src="assets/vectors/stats-top.svg"
-                  className="earn"
-                  alt="earn"
-                />
-              </Fade>
+              {/* <Fade bottom> */}
+              <img
+                src="assets/vectors/stats-top.svg"
+                className="earn"
+                alt="earn"
+              />
+              {/* </Fade> */}
             </div>
           </div>
           <div className="col-md-6">
@@ -86,14 +86,14 @@ const Stats = () => {
               </h3>
               <ul className="list">
                 <div>
-                  <Flip right cascade>
+                  <Fade bottom cascade>
                     <div>
                       <li> {textState.li1}</li> <br />
                       <li> {textState.li2}</li> <br />
                       <li> {textState.li3}</li> <br />
                       <li>{textState.li4}</li>
                     </div>
-                  </Flip>
+                  </Fade>
                 </div>
               </ul>
             </div>
@@ -102,43 +102,43 @@ const Stats = () => {
       </div>
 
       <div>
-        <Zoom>
-          <div className="stats mx-auto mt-5">
-            <img
-              className="outline"
-              src="./assets/images/box-outline.png"
-              alt="outline"
-            />
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-sm-3 col-6 py-2 py-sm-0">
-                  <h2>+1000</h2>
-                  <p>{textState.stat1}</p>
-                </div>
-                <div className="col-sm-3 col-6 py-2 py-sm-0">
-                  <h2>+35000</h2>
-                  <p>{textState.stat2}</p>
-                </div>
-                <div className="col-sm-3 col-6 py-2 py-sm-0">
-                  <h2>+10</h2>
-                  <p>
-                    {textState.stat3_1} <br /> {textState.stat3_2}
-                  </p>
-                </div>
-                <div className="col-sm-3 col-6 py-2 py-sm-0">
-                  <h2>+260</h2>
-                  <p>{textState.stat4}</p>
-                </div>
+        {/* <Zoom> */}
+        <div className="stats mx-auto mt-5">
+          <img
+            className="outline"
+            src="./assets/images/box-outline.png"
+            alt="outline"
+          />
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-sm-3 col-6 py-2 py-sm-0">
+                <h2>+1000</h2>
+                <p>{textState.stat1}</p>
+              </div>
+              <div className="col-sm-3 col-6 py-2 py-sm-0">
+                <h2>+35000</h2>
+                <p>{textState.stat2}</p>
+              </div>
+              <div className="col-sm-3 col-6 py-2 py-sm-0">
+                <h2>+10</h2>
+                <p>
+                  {textState.stat3_1} <br /> {textState.stat3_2}
+                </p>
+              </div>
+              <div className="col-sm-3 col-6 py-2 py-sm-0">
+                <h2>+260</h2>
+                <p>{textState.stat4}</p>
               </div>
             </div>
           </div>
-        </Zoom>
+        </div>
+        {/* </Zoom> */}
       </div>
 
       <div className="companies mx-auto mt-5">
         <div className="container-fluid">
           <div>
-            <Bounce cascade>
+            <Fade cascade>
               <div>
                 <div className="row">
                   <div className="col">
@@ -167,7 +167,7 @@ const Stats = () => {
                   </div>
                 </div>
               </div>
-            </Bounce>
+            </Fade>
           </div>
         </div>
       </div>

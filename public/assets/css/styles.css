@@ -429,9 +429,15 @@ code {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 376px) {
   #landing h1 {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  #landing h1 {
+    font-size: 16px;
   }
 }
 
@@ -473,6 +479,12 @@ code {
   }
 }
 
+@media screen and (max-width: 776px) {
+  #landing h3 {
+    font-size: 0.75rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #landing h3 {
     text-align: center;
@@ -506,7 +518,7 @@ code {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 376px) {
   #landing h3 {
     font-size: 0.675rem;
   }
@@ -1794,6 +1806,14 @@ code {
   }
 }
 
+@media screen and (max-width: 397px) {
+  #play .main .stats table.investor-table img {
+    width: 5rem;
+    top: -5rem;
+    left: -1rem;
+  }
+}
+
 @media screen and (max-width: 1350px) {
   #play .main .stats {
     padding-right: 2rem;
@@ -1834,6 +1854,30 @@ code {
 @media screen and (min-width: 1570px) {
   #play .main {
     padding-top: 18rem;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  #play .main {
+    padding-top: 15rem;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  #play .main {
+    padding-top: 12rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #play .main {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #play .main {
+    padding-top: 8rem;
   }
 }
 

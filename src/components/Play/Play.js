@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import RubberBand from "react-reveal/RubberBand";
-import Pulse from "react-reveal/Pulse";
+import Fade from "react-reveal/Fade";
 
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -71,7 +70,7 @@ const Play = () => {
           <div className="col-lg-6 order-lg-1 order-2">
             <h3 className="mb-3">{textState.mainHeading}</h3>
             <div>
-              <Pulse>
+              <Fade>
                 <h4>
                   {textState.para1}
                   <br /> &nbsp;&nbsp;&nbsp; {textState.para2}
@@ -86,78 +85,78 @@ const Play = () => {
                     alt="left"
                   />
                 </h4>
-              </Pulse>
+              </Fade>
             </div>
           </div>
           <div className="col-lg-6 order-lg-2 order-1">
-            <RubberBand>
-              <div className="stats">
-                <h2 className="stats-heading">
-                  <div className="title">
-                    {textState.tablesHead_1}
-                    <br />
-                    {textState.tablesHead_2} <br />
-                    {textState.tablesHead_3}
-                  </div>
-                </h2>
-
-                <table className="mt-2 investor-table">
-                  <tbody>
-                    <img
-                      className="graph"
-                      src="./assets/vectors/graph.svg"
-                      alt="graph"
-                    />
-                    <tr>
-                      <th colSpan="2">{textState.table1Head}</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h3>{textState.table1Col1_1}</h3>
-                        <h5>{textState.table1Col1_2}</h5>
-                      </td>
-                      <td>
-                        <h3>
-                          {textState.table1Col2_1}
-                          <br /> {textState.table1Col2_2}
-                        </h3>
-                        <h5>{textState.table1Col2_3}</h5>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table className="mt-2">
-                  <tbody>
-                    <tr>
-                      <th colSpan="2">{textState.table2Head}</th>
-                    </tr>
-                    <tr>
-                      <td style={{ width: "152px" }}>
-                        <h3>{textState.table2Col1_1}</h3>
-                        <h5>{textState.table2Col1_2}</h5>
-                      </td>
-                      <td>
-                        <h3>{textState.table2Col2_1}</h3>
-                        <h5>{textState.table2Col2_2}</h5>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <div className="companies">
-                  <h3>{textState.company1}</h3>
-                  <img
-                    src="./assets/vectors/cointelegraph.svg"
-                    alt="cointelegraph"
-                  />
-                  <img
-                    className="w-50"
-                    src="./assets/vectors/forbes.svg"
-                    alt="forbes"
-                  />
+            {/* <RubberBand> */}
+            <div className="stats">
+              <h2 className="stats-heading">
+                <div className="title">
+                  {textState.tablesHead_1}
+                  <br />
+                  {textState.tablesHead_2} <br />
+                  {textState.tablesHead_3}
                 </div>
+              </h2>
+
+              <table className="mt-2 investor-table">
+                <tbody>
+                  <img
+                    className="graph"
+                    src="./assets/vectors/graph.svg"
+                    alt="graph"
+                  />
+                  <tr>
+                    <th colSpan="2">{textState.table1Head}</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h3>{textState.table1Col1_1}</h3>
+                      <h5>{textState.table1Col1_2}</h5>
+                    </td>
+                    <td>
+                      <h3>
+                        {textState.table1Col2_1}
+                        <br /> {textState.table1Col2_2}
+                      </h3>
+                      <h5>{textState.table1Col2_3}</h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table className="mt-2">
+                <tbody>
+                  <tr>
+                    <th colSpan="2">{textState.table2Head}</th>
+                  </tr>
+                  <tr>
+                    <td style={{ width: "152px" }}>
+                      <h3>{textState.table2Col1_1}</h3>
+                      <h5>{textState.table2Col1_2}</h5>
+                    </td>
+                    <td>
+                      <h3>{textState.table2Col2_1}</h3>
+                      <h5>{textState.table2Col2_2}</h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="companies">
+                <h3>{textState.company1}</h3>
+                <img
+                  src="./assets/vectors/cointelegraph.svg"
+                  alt="cointelegraph"
+                />
+                <img
+                  className="w-50"
+                  src="./assets/vectors/forbes.svg"
+                  alt="forbes"
+                />
               </div>
-            </RubberBand>
+            </div>
+            {/* </RubberBand> */}
           </div>
         </div>
       </div>

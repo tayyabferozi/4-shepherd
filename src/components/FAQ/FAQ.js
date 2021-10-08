@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 import { LanguageContext } from "../../context/LanguageContext";
@@ -39,7 +40,7 @@ const FAQ = () => {
 
       <div className="faqs-container">
         <div>
-          <Zoom right cascade>
+          <Fade cascade>
             <div className="faqs">
               <div className="question">
                 <h2>{textState.q1}</h2>
@@ -58,7 +59,7 @@ const FAQ = () => {
                 <p>{textState.a4}</p>
               </div>
             </div>
-          </Zoom>
+          </Fade>
         </div>
         <Zoom>
           <img
