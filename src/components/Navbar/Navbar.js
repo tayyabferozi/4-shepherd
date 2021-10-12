@@ -20,7 +20,7 @@ const engText = {
 
 const Navbar = () => {
   const { isSpanish, toggleIsSpanish } = useContext(LanguageContext);
-  const [textState, setTextState] = useState(engText);
+  const [textState, setTextState] = useState(spanishText);
 
   const navRef = useRef(null);
   const [navActive, setNavActive] = useState(false);
@@ -46,7 +46,7 @@ const Navbar = () => {
   });
 
   useEffect(() => {
-    setTextState(isSpanish ? engText : spanishText);
+    setTextState(isSpanish ? spanishText : engText);
   }, [isSpanish]);
 
   return (

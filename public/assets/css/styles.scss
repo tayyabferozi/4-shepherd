@@ -37,6 +37,16 @@ $primary-dark: #150035;
 }
 
 @font-face {
+  font-family: "Helvetica Light Old";
+  src: url("../fonts/helvetica-light-587ebe5a59211.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  src: url("../fonts/Helvetica-400.ttf");
+}
+
+@font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeue-Regular.otf");
 }
@@ -233,6 +243,8 @@ code {
     top: -1px;
     left: 0;
     z-index: -1;
+    right: 0;
+    width: 100vw;
   }
 
   .landing-right {
