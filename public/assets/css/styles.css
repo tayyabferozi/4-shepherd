@@ -1917,6 +1917,7 @@ code {
 }
 
 #art .desc {
+  font-weight: 500;
   font-family: "Helvetica Light";
   font-size: 1.25rem;
   text-align: justify;
@@ -2064,7 +2065,7 @@ code {
 
 #about-us .about-text {
   max-width: 700px;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 810px;
   font-size: 1.25rem;
   font-family: "Helvetica Light";
