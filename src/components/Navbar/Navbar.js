@@ -7,7 +7,7 @@ const spanishText = {
   navItem2: "ABOUT US",
   navItem3: "FAQ",
   navItem4: "CONTACT",
-  navItem5: "ENGLISH",
+  navItem5: "ESPAÑOL",
 };
 
 const engText = {
@@ -15,7 +15,7 @@ const engText = {
   navItem2: "NOSOTROS",
   navItem3: "FAQ",
   navItem4: "CONTACTO",
-  navItem5: "ESPAÑOL",
+  navItem5: "ENGLISH",
 };
 
 const Navbar = () => {
